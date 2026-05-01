@@ -1,13 +1,12 @@
 /* Universal styles */
-*{
-    font-size: 16px;
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-
+* {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .center {
-    text-align: center;
+  text-align: center;
 }
 .image-container {
   overflow: hidden;
@@ -17,27 +16,53 @@
   display: block;
 }
 /* Header */
-header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    background-color: aqua;
-    height: 4rem;
-    padding: 1.875rem;
-text-align: center;}
-header ul
-header .image{
- width: 90%;
-  height: 65%;
-  margin: 0 auto;
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 4rem;
+  padding: 1.975rem;
+  border-bottom: solid black 0.05rem;
 }
-nav ul{ 
-    display: flex;
-    list-style: none;
-    padding: 0rem .5rem}
+header #brand .image-container img {
+  width: 11rem;
+}
+header nav,
+header #brand {
+  width: 50%;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.25rem;
+}
+header #brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+header a:active {
+  opacity: 0.3;
+}
+
 /* Main */
 main {
-    position: relative ;
-    top: 4.5rem;
+  position: relative;
+  top: 4.5rem;
 }
+
+/* About Me */
