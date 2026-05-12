@@ -1,9 +1,11 @@
 /* Universal styles */
 * {
-  font-size: 16px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+html {
+  font-size: 16px;
 }
 .center {
   text-align: center;
@@ -15,6 +17,12 @@
 .image-container img {
   display: block;
 }
+#main-container {
+  max-width: 1100px;
+  margin: 0 auto; /* centers it */
+  padding: 0 1rem; /* breathing room on sides */
+}
+
 /* Header */
 header {
   width: 100%;
@@ -25,9 +33,11 @@ header {
   height: 4rem;
   padding: 1.975rem;
   border-bottom: solid black 0.05rem;
+  z-index: 10;
 }
 header #brand .image-container img {
   width: 11rem;
+  height: auto;
 }
 header nav,
 header #brand {
@@ -35,7 +45,6 @@ header #brand {
 }
 
 header nav ul {
-  display: flex;
   list-style: none;
   display: flex;
   justify-content: flex-end;
@@ -61,8 +70,25 @@ header a:active {
 
 /* Main */
 main {
-  position: relative;
-  top: 4.5rem;
+  padding-top: 4rem;
 }
 
 /* About Me */
+#about-me-section {
+  padding: 2rem;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.75rem;
+}
+.about-me-text {
+  width: 60%;
+  text-align: center;
+}
+.about-me .image-container {
+  width: 35%;
+  max-width: 350px;
+}
