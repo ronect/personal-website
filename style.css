@@ -94,7 +94,7 @@ main {
   font-size: 2rem;
 }
 .about-me .image-container {
-  width: 300px;
+  max-width: 350px;
   flex-shrink: 0;
 }
 .about-me h2 {
@@ -113,8 +113,8 @@ main {
   justify-content: space-evenly;
 }
 #skills-section .frame {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   perspective: 1000px;
   overflow: hidden;
 }
@@ -141,5 +141,13 @@ main {
   overflow: scroll;
 }
 .front-card img {
-  width: 90%;
+  width: 100%;
+}
+#skills-section .back-card ol {
+  list-style: disc;
+}
+
+/* Footer */
+#Contact-section {
+  display: flex;
 }

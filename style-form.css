@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: grey;
+}
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  width: 90%;
+}
+
+/* Header */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 4rem;
+  padding: 1.975rem;
+  border-bottom: solid black 0.05rem;
+  z-index: 10;
+  background-color: white;
+}
+header #brand .image-container img {
+  width: 11rem;
+  height: auto;
+}
+header nav,
+header #brand {
+  width: 50%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.25rem;
+}
+header #brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+header a:active {
+  opacity: 0.3;
+}
+/* Main */
+main {
+  padding-top: 4rem;
+}
+#overlay {
+  margin: 3% auto;
+  background-color: white;
+  width: 90%;
+}
+form {
+  text-align: center;
+}
