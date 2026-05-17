@@ -91,6 +91,7 @@ main {
   text-align: left;
   display: block;
   text-align: left;
+  font-size: 2rem;
 }
 .about-me .image-container {
   width: 300px;
@@ -137,6 +138,7 @@ main {
 }
 .back-card {
   transform: rotateY(180deg);
+  overflow: scroll;
 }
 .front-card img {
   width: 90%;
